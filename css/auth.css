@@ -1,0 +1,49 @@
+/* =============== LOGIN INICIO =============== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Mouse+Memoirs&family=Poppins:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: linear-gradient( 183.5deg,  #001f3f 18.6%, #001f3f 119.9% );
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.textoLogin {
+    color: #008aff;
+}
+
+.inputLogin {
+    background-color: #008aff;
+}
+
+.btnLogin {
+    background-color: #008aff;
+}
+
+.btnLogin:hover {
+    background-color: #1565c0f3;
+}
+
+/* =============== LOGIN FIN =============== */
+
+/* =============== REGISTRO INICIO =============== */
+
+.inputRegistro {
+    background-color: #008aff;
+}
+
+.btnRegistro {
+    background-color: #008aff;
+}
+
+.btnRegistro:hover {
+    background-color: #1565c0f3;
+}
+
+/* =============== REGISTRO FIN =============== */

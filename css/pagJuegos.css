@@ -1,0 +1,150 @@
+/* =============== PÁGINA JUEGOS INICIO =============== */
+
+.containerMain {
+    margin-top: 85px;
+}
+
+.tituloJuegos {
+    color: #FFD700;
+}
+
+.iconosPlataformas i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.iconosPlataformas i:hover {
+    color: #FFD700;
+}
+
+.btnComprar {
+    background-color: #FFD700;
+    color: #001F3F;
+}
+
+.btnComprar:hover {
+    background-color: #ffffff;
+    color: #001F3F;
+}
+
+@media only screen and (min-width: 1400px) {
+    .btnComprar {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .btnComprar {
+        margin-top: 30px;
+    }
+}
+
+.containerProducto {
+    text-align: start;
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 50px;
+}
+
+.textoDescripción {
+    margin-top: 30px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.ulJuegos {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ulJuegos li {
+    margin-top: 10px;
+}
+
+.btnDescripción {
+    background-color: #ffffff;
+    border-radius: 99px;
+    margin-left: 12px;
+    color: #001F3F;
+    display: inline-block;
+    position: relative;
+}
+
+.btnDescripción:hover {
+    background-color: #FFD700;
+    color: #001F3F;
+}
+
+.btnDescripción:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all 0.9s;
+}
+
+.btnDescripción:hover:after {
+    width: 100%;
+    background: #fff;
+}
+
+.btnDescripción:hover,
+.btnDescripción.active {
+    background-color: #FFD700;
+}
+
+.tablaDescripción {
+    display: none;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 15px;
+}
+
+.tablaDescripción {
+    margin-bottom: 120px;
+}
+
+.tablaDescripción thead th {
+    background-color: #FFD700;
+    color: #001F3F;
+}
+
+.btnRequisitos {
+    background-color: #ffffff;
+    border-radius: 99px;
+    color: #001F3F;
+    margin-left: 12px;
+    display: inline-block;
+    position: relative;
+}
+
+.btnRequisitos:hover {
+    background-color: #FFD700;
+    color: #001F3F;
+}
+
+.btnRequisitos:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all 0.9s;
+}
+
+.btnRequisitos:hover:after {
+    width: 100%;
+    background: #fff;
+}
+
+.btnRequisitos:hover,
+.btnRequisitos.active {
+    background-color: #FFD700;
+}
+
+/* =============== PÁGINA JUEGOS FIN =============== */

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === AUTOR === -->
+    <meta name="author" content="José Nicolás Varela">
+    <!-- === DESCRIPCIÓN === -->
+    <meta name="description" content="Compra los mejores videojuegos en nuestra tienda en línea. Encuentra títulos emocionantes para todas las plataformas, desde juegos para consolas hasta experiencias para PC. ¡Descubre las últimas novedades y ofertas exclusivas!">
+    <!-- === BOOTSTRAP === -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- === FONT-AWESOME === -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- === STYLES === -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/pagJuegos.css">
+    <!-- === ICONO === -->
+    <link rel="icon" href="/assets/images/Iconos/Icono Game Zone.png">
+    <!-- === TITULO === -->
+    <title>EA FC 24 | Game Zone</title>
+</head>
+<body>
+
+    <!-- =============== NAVBAR INICIO =============== -->
+
+    <nav class="navbar navbar-expand-lg cusmtomNavBar fixed-top p-1">
+        <div class="container">
+            <a class="navbar-brand" href="/pages/index.html">
+                <img src="/assets/images/Logo Game Zone.png" class="logoGameZone" alt="Logo Game Zone">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav">
+                        <a class="nav-link" href="/pages/error404.html">Tienda</a>
+                        <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="/pages/contacto.html">Contactanos</a>
+                        <a class="nav-link" href="/pages/error404.html">Noticias</a>
+                </div>
+                <div class="navBarUser d-flex ms-auto">
+                    <a href="/pages/login.html" target="_blank" class="nav-link" >
+                        <i class="fa-solid fa-user d-none d-lg-inline" style="margin-right: 10px;"></i>Ingresar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =============== NAVBAR FIN =============== -->
+
+    <!-- =============== MAIN INICIO =============== -->
+
+    <main>
+        
+        <div class="container containerMain">
+            <div class="row">
+                <h4 class="text-center tituloMain fs-2"><strong>EA FC 24</strong></h4>
+                <!-- =============== IMAGEN DEL JUEGO =============== -->
+                <div class="col-xl-8 d-flex justify-content-center align-items-center mt-3">
+                    <img src="/assets/images/portadas/EAFC24.png" alt="EA FC 24" class="img-fluid img-thumbnail rounded-0" loading="lazy">
+                </div>
+    
+                <div class="col-xl-4 mt-3">
+                    <!-- =============== VIDEO YOUTUBE =============== -->
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-vL01jbgENE?si=hPSWJdjPgrwVF0Jv" title="EA FC 24 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <hr class="border border-light border-1 opacity-100 mt-4">
+                    <div class="row">
+                        <!-- =============== PLATAFORMAS =============== -->
+                        <div class="col-xl-6 col-md-6 col-sm-6">
+                            <h5 class="tituloJuegos">Disponible en:</h5>
+                            <div class="mt-3 iconosPlataformas">
+                                <i class="fa-brands fa-steam"></i>
+                                <i class="fa-brands fa-playstation ms-3"></i>
+                                <i class="fa-brands fa-xbox ms-3"></i>
+                            </div>
+                            <div class="mt-3">
+                                <p class="text-white fs-4">$ 28 USD</p>
+                            </div>
+                        </div>
+                        <!-- =============== MEDIOS DE PAGO  =============== -->
+                        <div class="col-xl-6 col-md-6 col-sm-6">
+                            <h5 class="tituloJuegos">Medios de Pago:</h5>
+                            <img src="/assets/images/banners/imgBanner4.png" alt="Mercado Pago" class="img-fluid">
+                            <img src="/assets/images/banners/imgBanner5.png" alt="Plan de pago de 6 Cuotas" class="img-fluid">
+                        </div>
+                        <!-- =============== BOTON COMPRAR  =============== -->
+                        <div class="d-grid gap-2 col-xl-12 mx-auto">
+                            <a href="/pages/error404.html" target="_blank" class="btn btnComprar" type="button"><i class="fa-solid fa-cart-plus px-2"></i><strong>COMPRAR</strong></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- =============== DESCRIPCIÓN - FICHA TÉCNICA  =============== -->
+
+        <div id="containerProducto" class="container containerProducto">
+            <button id="btnDescripcion" class="btn btnDescripción active" onclick="mostrarTexto()"><strong>DESCRIPCIÓN</strong></button>
+            <button id="btnFichaTecnica" class="btn btnRequisitos" onclick="mostrarTabla()"><strong>FICHA TÉCNICA</strong></button>
+            <div id="textoDescripción" class="textoDescripción mt-5">
+                <p>EA SPORTS FC™ 24 es una nueva era para The World's Game: más de 19 000 jugadores con licencia completa, más de 700 equipos y más de 30 ligas jugando juntos en la experiencia de fútbol más auténtica jamás creada. Siéntete más cerca del juego con tres tecnologías de vanguardia que potencian un realismo sin igual en cada partido: HyperMotionV**, PlayStyles optimizados por Opta y un motor Frostbite™ revolucionado.
+                </p>
+                <br>
+                <p>
+                    HyperMotionV captura el juego como realmente se juega, utilizando datos volumétricos de más de 180 partidos profesionales de hombres y mujeres para garantizar que el movimiento en el juego refleje con precisión la acción del mundo real en el campo. PlayStyles dimensiona a los atletas, interpretando datos de Opta y otras fuentes en habilidades distintivas que realzan el realismo y la individualidad de cada jugador.
+                </p>
+                <br>
+                <p>
+                    El revolucionario motor Frostbite™ ofrece The World's Game con detalles realistas, brindando un nuevo nivel de inmersión a cada partida. Desarrolle leyendas del club y mejore a sus jugadoras con las nuevas evoluciones de Ultimate Team™, y dé la bienvenida a las futbolistas al campo junto a los hombres mientras crea el XI de sus sueños. Escribe tu propia historia en Manager and Player Career, y únete a tus amigos en la cancha con cross-play*** en Clubs y VOLTA FOOTBALL™. EA SPORTS FC™ 24 es el próximo capítulo en un futuro más innovador del fútbol.
+                </p>
+                <br>
+                <ul class="ulJuegos">
+                    <li><i class="fa-solid fa-check-double me-2"></i>
+                        Vive una autenticidad sin parangón en EA SPORTS FC™ 24, que incluye las estrellas, los equipos, los estadios y las ligas más grandes del fútbol.
+                    </li>
+                    <li><i class="fa-solid fa-check-double me-2"></i>
+                        HyperMotionV lleva el ritmo y la fluidez del fútbol real a The World's Game con datos volumétricos de más de 180 partidos de primer nivel de competiciones.
+                    </li>
+                    <li><i class="fa-solid fa-check-double me-2"></i>
+                        PlayStyles dimensiona a cada futbolista y va más allá de sus valoraciones generales para plasmar las habilidades que les hacen especiales en el campo.
+                    </li>
+                    <li><i class="fa-solid fa-check-double me-2"></i>
+                        Viaja a través del Modo Carrera del siglo XIX, descubriendo sus secretos y maravillas.
+                    </li>
+                    <li><i class="fa-solid fa-check-double me-2"></i>
+                        Domina poderosos Skills y perfecciona tus habilidades de Ataque y Defensa para enfrentarte a desafíos emocionantes.
+                    </li>
+                    <li><i class="fa-solid fa-check-double me-2"></i>
+                        Desarrolla a tus propias leyendas del club, mejorando a tus futbolistas con las nuevas Evoluciones de Ultimate Team™.
+                    </li>
+                    <li><i class="fa-solid fa-check-double me-2"></i>
+                        Ultimate Team™ une las dos partes de The World’s Game al juntar el fútbol masculino y femenino para que jueguen en el mismo campo.
+                    </li>
+                </ul>
+            </div>
+            <div id="tablaDescripción" class="tablaDescripción">
+                <table class="table table-striped mt-5 mb-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre:</th>
+                            <th scope="col">EA FC 24</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Genero:</th>
+                            <td colspan="2">Deportes</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plataformas:</th>
+                            <td colspan="2">PC - PS - XBOX</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Idiomas:</th>
+                            <td colspan="2">EN - ES - IT - DE - FR</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Rating:</th>
+                            <td>E/Pegi12 - Todo Publico</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Distribución:</th>
+                            <td colspan="2">Electronic Arts</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- =============== CYBER MONDAY =============== -->
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+
+                <div class="col-xl-8">
+                    <a href="/pages/error404.html" target="_blank">
+                        <img src="/assets/images/banners/imgBanner6.png" class="img-fluid" alt="Banner Cyber Monday" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-xl-4 d-none d-xl-block">
+                    <a href="/pages/error404.html" target="_blank">
+                        <img src="/assets/images/banners/imgBanner7.jpg" class="img-fluid" alt="Banner Joystick" loading="lazy">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- =============== MAIN FIN =============== -->
+
+    <!-- =============== FOOTER INICIO =============== -->
+
+    <footer class="footerCustom">
+
+        <div class="container mt-2 text-center">
+            <div class="row">
+
+                <div class="col-md-4 col-xl-3 mx-auto">
+                    <a href="/pages/index.html">
+                        <img src="/assets/images/Logo Game Zone.png" class="logoGameZoneFooter" alt="Logo Game Zone">
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-xl-3 mx-auto d-flex align-items-center justify-content-center text-start">
+                    <ul class="linksFooter" style="list-style-type: none;">
+                        <li class="mt-2">
+                            <a href="/pages/error404.html"><i class="fa-solid fa-shop"></i>Tienda</a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="/pages/error404.html"><i class="fa-solid fa-tags"></i>Ofertas</a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="/pages/contacto.html"><i class="fa-solid fa-phone"></i>Contacto</a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="/pages/error404.html"><i class="fa-solid fa-newspaper"></i>Noticias</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-xl-3 mx-auto mt-2 text-center">
+                    <h5>Seguinos en Nuestras Redes</h5>
+                    <div class="mt-3 iconosRedes">
+                        <a href="/pages/error404.html"><i class="bi bi-facebook"></i></a>
+                        <a href="/pages/error404.html"><i class="bi bi-instagram"></i></a>
+                        <a href="/pages/error404.html"><i class="bi bi-twitter"></i></a>
+                        <a href="/pages/error404.html"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center p-2 " style="background-color: rgba(0, 0, 0, 0.158); color: #001F3F;">
+            © 2024 Game Zone | Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+    <!-- =============== FOOTER FIN =============== -->
+
+    <script src="/js/pagJuegos.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

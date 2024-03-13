@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient( 183.5deg,  #FFD700 18.6%, #FFD700 119.9% );
+    height: 100vh;
+}
+
+.container404 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/images/portadas/error404.png'), #001F3F;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .5);
+}
+
+.container404 .contenido404 {
+    max-width: 600px;
+    text-align: center;
+}
+
+.container404 .contenido404 h2 {
+    font-size: 18vw;
+    color: #fff;
+    line-height: 1em;
+}
+
+.container404 .contenido404 h4 {
+    position: relative;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #001F3F;
+    background: #fff;
+    border-radius: 25px;
+    font-weight: 300;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.container404 .contenido404 p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.container404 .contenido404 a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #FFD700;
+    color: #001F3F;
+    text-decoration: none;
+    margin-top: 25px;
+    border-radius: 25px;
+}
+
+.container404 .contenido404 a:hover {
+    background-color: #fff;
+    color: #001F3F;
+}

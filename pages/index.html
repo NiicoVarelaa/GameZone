@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === AUTOR === -->
+    <meta name="author" content="José Nicolás Varela">
+    <!-- === DESCRIPCIÓN === -->
+    <meta name="description" content="Compra los mejores videojuegos en nuestra tienda en línea. Encuentra títulos emocionantes para todas las plataformas, desde juegos para consolas hasta experiencias para PC. ¡Descubre las últimas novedades y ofertas exclusivas!">
+    <!-- === BOOTSTRAP === -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- === FONT-AWESOME === -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- === AOS === -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- === STYLES === -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- === ICONO === -->
+    <link rel="icon" href="/assets/images/Iconos/Icono Game Zone.png">
+    <!-- === TITULO === -->
+    <title>Inicio | Game Zone</title>
+</head>
+<body>
+
+    <!-- =============== NAVBAR INICIO =============== -->
+
+    <nav class="navbar navbar-expand-lg cusmtomNavBar fixed-top p-1">
+        <div class="container">
+            <a class="navbar-brand" href="/pages/index.html">
+                <img src="/assets/images/Logo Game Zone.png" class="logoGameZone" alt="Logo Game Zone">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav">
+                        <a class="nav-link" href="/pages/error404.html">Tienda</a>
+                        <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="/pages/contacto.html">Contactanos</a>
+                        <a class="nav-link" href="/pages/error404.html">Noticias</a>
+                </div>
+                <div class="navBarUser d-flex ms-auto">
+                    <a href="/pages/login.html" target="_blank" class="nav-link" >
+                        <i class="fa-solid fa-user d-none d-lg-inline" style="margin-right: 10px;"></i>Ingresar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =============== NAVBAR FIN =============== -->
+
+    <!-- =============== HEADER INICIO =============== -->
+
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide text-center" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators d-none d-xl-block">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/images/header/Hogwarts Legacy.jpg" class="d-block w-100 headerImg" alt="Banner Hogwarts Legacy">
+                    <div class="carouselText d-none d-lg-block">
+                        <h3 class="tituloCarousel"><strong>Hogwarts Legacy</strong></h3>
+                        <p>
+                            Es un RPG inmersivo de acción en mundo abierto. <br> Ahora puedes tomar el control de la acción y ser el centro <br> de tu propia aventura en el mundo mágico.
+                        </p>
+                        <a class="btn buttonCarousel mt-3" href="/pages/hogwartsLegacy.html" target="_blank">Más Info.</a>
+                    </div>
+                </div>
+            <div class="carousel-item">
+                <img src="/assets/images/header/Resident Evil Village.jpg" class="d-block w-100 headerImg" alt="Banner Resident Evil Village">
+                <div class="carouselText d-none d-lg-block">
+                    <h3 class="tituloCarousel"><strong>Resident Evil Village</strong></h3>
+                    <p>
+                        Vive el survival horror como nunca antes en la 8.ª entrega principal <br> de la aclamada serie Resident Evil: Resident Evil Village. <br> El terror más realista e inescapable, con gráficos hiperdetallados, <br> intensa acción en 1.ª persona y una trama magistral.
+                    </p>
+                    <a class="btn buttonCarousel mt-3" href="/pages/residentEvil.html" target="_blank">Más Info.</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/images/header/Assassins Creed Valhalla.jpg" class="d-block w-100 headerImg" alt="Banner Assassins Creed Valhalla">
+                <div class="carouselText d-none d-lg-block">
+                    <h3 class="tituloCarousel"><strong>Assassins Creed Valhalla</strong></h3>
+                    <p>
+                        Es un videojuego de acción y aventuras desarrollado por Ubisoft Montreal. <br> Es el decimosegundo en importancia y el vigesimosegundo <br> lanzado dentro de la saga de Assassin Creed.
+                    </p>
+                    <a class="btn buttonCarousel mt-3" href="/pages/assanssinsCreed.html" target="_blank">Más Info.</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/images/header/EAFC24.jpg" class="d-block w-100 headerImg" alt="Banner EA FC 24">
+                <div class="carouselText d-none d-lg-block">
+                    <h3 class="tituloCarousel"><strong>EA FC 24</strong></h3>
+                    <p>
+                        EA SPORTS FC™ 24 te da la bienvenida a The World's Game: <br> La experiencia futbolística más fiel hasta la fecha con <br> HyperMotionV, PlayStyles optimizado por Opta <br> y el motor mejorado de Frostbite™.
+                    </p>
+                    <a class="btn buttonCarousel mt-3" href="/pages/eafc24.html" target="_blank">Más Info.</a>
+                </div>
+            </div>
+            </div>
+            <div class="d-none d-lg-block">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- =============== HEADER FIN =============== -->
+
+    <!-- =============== MAIN INICIO =============== -->
+
+    <main>
+
+        <!-- =============== CARDS NOVEDADES INICIO =============== -->
+
+        <h1 class="text-center tituloMain mt-5">NOVEDADES</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img1.jpg" class="w-100 img-fluid" alt="Hogwarts Legacy Card"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Hogwarts Legacy</h4>
+                            <p class="mb-2">$ 30 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/hogwartsLegacy.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img2.png" class="w-100 img-fluid" alt="Resident Evil Village"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Resident Evil Village</h4>
+                            <p class="mb-2">$ 12 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/residentEvil.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img3.png" class="w-100 img-fluid" alt="Assassin's Creed"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Assassin's Creed</h4>
+                            <p class="mb-2">$ 20 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/assanssinsCreed.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img4.jpg" class="w-100 img-fluid" alt="EA FC 24"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">EA FC 24</h4>
+                            <p class="mb-2">$ 28 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/eafc24.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============== CARDS NOVEDADES FIN =============== -->
+
+        <!-- =============== BOTON MOSTRAR MÁS INICIO =============== -->
+
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <a class="buttonMostrarMas" href="/pages/error404.html" target="_blank">Mostrar más</a>
+        </div>
+
+        <!-- =============== BOTON MOSTRAR MÁS FIN =============== -->
+
+        <hr class="border border-warning border-1 opacity-100 container">
+
+        <!-- =============== CARDS LO MEJOR DEL AÑO INICIO =============== -->
+        
+        <h1 class="text-center tituloMain mt-5">LO MEJOR DEL AÑO</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img5.png" class="w-100 img-fluid" alt="Elden Ring"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Elden Ring</h4>
+                            <p class="mb-2">$ 48 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img6.png" class="w-100 img-fluid" alt="Marvel’s Spider-Man"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Marvel’s Spider-Man</h4>
+                            <p class="mb-2">$ 50 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img7.png" class="w-100 img-fluid" alt="Stray"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Stray</h4>
+                            <p class="mb-2">$ 14 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img8.png" class="w-100 img-fluid" alt="Dying Light 2"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Dying Light 2</h4>
+                            <p class="mb-2">$ 20 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============== CARDS LO MEJOR DEL AÑO FIN =============== -->
+
+        <!-- =============== BOTON MOSTRAR MÁS INICIO =============== -->
+
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <a class="buttonMostrarMas" href="/pages/error404.html" target="_blank">Mostrar más</a>
+        </div>
+
+        <!-- =============== BOTON MOSTRAR MÁS FIN =============== -->
+
+        <hr class="border border-warning border-1 opacity-100 container">
+
+        <!-- =============== BANNER INICIO =============== -->
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-center" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <a href="/pages/error404.html" target="_blank">
+                        <img src="/assets/images/banners/imgBanner1.png" alt="Pagos" width="100%">
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-center" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <a href="/pages/error404.html" target="_blank">
+                        <img src="/assets/images/banners/imgBanner2.png" alt="Envios" width="100%">
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-center" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <a href="/pages/error404.html" target="_blank">
+                        <img src="/assets/images/banners/imgBanner3.png" alt="Retiros" width="100%">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============== BANNER FIN =============== -->
+
+        <hr class="border border-warning border-1 opacity-100 container">
+
+        <!-- =============== CARDS LO MAS VENDIDO INICIO =============== -->
+
+        <h1 class="text-center tituloMain mt-5">LO MÁS VENDIDO</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img9.jpg" class="w-100 img-fluid" alt="The Witcher 3"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">The Witcher 3</h4>
+                            <p class="mb-2">$ 30 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img10.jpg" class="w-100 img-fluid" alt="Grand Theft Auto V"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Grand Theft Auto V</h4>
+                            <p class="mb-2">$ 15 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img11.jpg" class="w-100 img-fluid" alt="Red Dead Redemption 2"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">R. D. Redemption 2</h4>
+                            <p class="mb-2">$ 18 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img12.jpg" class="w-100 img-fluid" alt="Cyberpunk 2077"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Cyberpunk 2077</h4>
+                            <p class="mb-2">$ 45 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============== CARDS LO MAS VENDIDO FIN =============== -->
+
+        <!-- =============== BOTON MOSTRAR MÁS INICIO =============== -->
+
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <a class="buttonMostrarMas" href="/pages/error404.html" target="_blank">Mostrar más</a>
+        </div>
+
+        <!-- =============== BOTON MOSTRAR MÁS FIN =============== -->
+
+        <hr class="border border-warning border-1 opacity-100 container">
+
+        <!-- =============== CARDS CLÁSICOS INICIO =============== -->
+
+        <h1 class="text-center tituloMain mt-5">CLÁSICOS</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img13.jpg" class="w-100 img-fluid" alt="Far Cry 6"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Far Cry 6</h4>
+                            <p class="mb-2">$ 48 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img14.jpg" class="w-100 img-fluid" alt="Forza Horizon 5"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Forza Horizon 5</h4>
+                            <p class="mb-2">$ 32 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img15.jpg" class="w-100 img-fluid" alt="Ghost Recon"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Ghost Recon</h4>
+                            <p class="mb-2">$ 8 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 mt-5 d-flex align-items-center justify-content-center">
+                    <div class="cardMain border border-3 rounded-bottom">
+                        <div>
+                            <img src="/assets/images/cards/img16.jpg" class="w-100 img-fluid" alt="Fallout 4"/>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="tituloCard">Fallout 4</h4>
+                            <p class="mb-2">$ 12 USD</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn buttonCard w-100" href="/pages/error404.html" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============== CARDS CLÁSICOS FIN =============== -->
+
+        <!-- =============== BOTON MOSTRAR MÁS INICIO =============== -->
+
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <a class="buttonMostrarMas" href="/pages/error404.html" target="_blank">Mostrar más</a>
+        </div>
+
+        <!-- =============== BOTON MOSTRAR MÁS FIN =============== -->
+        
+    </main>
+
+    <!-- =============== MAIN FIN =============== -->
+
+    <!-- =============== FOOTER INICIO =============== -->
+
+    <footer class="footerCustom">
+
+        <div class="container mt-2 text-center">
+            <div class="row">
+
+                <div class="col-md-4 col-xl-3 mx-auto">
+                    <a href="/pages/index.html">
+                        <img src="/assets/images/Logo Game Zone.png" class="logoGameZoneFooter" alt="Logo Game Zone">
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-xl-3 mx-auto d-flex align-items-center justify-content-center text-start">
+                    <ul class="linksFooter" style="list-style-type: none;">
+                        <li class="mt-2">
+                            <a href="/pages/error404.html"><i class="fa-solid fa-shop"></i>Tienda</a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="/pages/error404.html"><i class="fa-solid fa-tags"></i>Ofertas</a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="/pages/contacto.html"><i class="fa-solid fa-phone"></i>Contacto</a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="/pages/error404.html"><i class="fa-solid fa-newspaper"></i>Noticias</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-xl-3 mx-auto mt-2 text-center">
+                    <h5>Seguinos en Nuestras Redes</h5>
+                    <div class="mt-3 iconosRedes">
+                        <a href="/pages/error404.html"><i class="bi bi-facebook"></i></a>
+                        <a href="/pages/error404.html"><i class="bi bi-instagram"></i></a>
+                        <a href="/pages/error404.html"><i class="bi bi-twitter"></i></a>
+                        <a href="/pages/error404.html"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center p-2 " style="background-color: rgba(0, 0, 0, 0.158); color: #001F3F;">
+            © 2024 Game Zone | Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+    <!-- =============== FOOTER FIN =============== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

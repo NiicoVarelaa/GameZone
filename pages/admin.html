@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === AUTOR === -->
+    <meta name="author" content="José Nicolás Varela">
+    <!-- === DESCRIPCIÓN === -->
+    <meta name="description" content="Compra los mejores videojuegos en nuestra tienda en línea. Encuentra títulos emocionantes para todas las plataformas, desde juegos para consolas hasta experiencias para PC. ¡Descubre las últimas novedades y ofertas exclusivas!">
+    <!-- === BOOTSTRAP === -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- === FONT-AWESOME === -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- === STYLES === -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <!-- === ICONO === -->
+    <link rel="icon" href="/assets/images/Iconos/Icono Game Zone.png">
+    <!-- === TITULO === -->
+    <title>Admin | Game Zone</title>
+</head>
+<body>
+
+    <!-- =============== NAVBAR INICIO =============== -->
+
+    <nav class="navbar navbar-expand-lg cusmtomNavBar fixed-top p-1">
+        <div class="container">
+            <a class="navbar-brand" href="/pages/index.html">
+                <img src="/assets/images/Logo Game Zone.png" class="logoGameZone" alt="Logo Game Zone">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav">
+                        <a id="adminLink" class="nav-link disable" aria-disabled="true">Admin</a>
+                        <a class="nav-link" href="/pages/error404.html">Tienda</a>
+                        <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="/pages/contacto.html">Contactanos</a>
+                        <a class="nav-link" href="/pages/error404.html">Noticias</a>
+                </div>
+                <div class="navBarUser d-flex ms-auto">
+                    <a href="/pages/login.html" target="_blank" class="nav-link" >
+                        <i class="fa-solid fa-user d-none d-lg-inline" style="margin-right: 10px;"></i>Ingresar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =============== NAVBAR FIN =============== -->
+
+    <!-- =============== MAIN INICIO =============== -->
+
+    <div class="container containerAdmin">
+        <div class="row">
+            <div class="col-xl-8 col-md-8 col-sm-8">
+                <h2 class="text-white"><strong>Administrar Productos</strong></h2>
+            </div>
+            <div class="col-xl-4 col-md-4 col-sm-4 d-flex align-items-center justify-content-end btnAgregarCustom">
+                <button type="button" class="btn btnAgregar" data-bs-toggle="modal" data-bs-target="#modalAgregar">AGREGAR<i class="fa-solid fa-circle-plus ms-2"></i></button>
+            </div>
+        </div>
+        <hr class="border border-warning border-1 opacity-100">
+    </div>
+
+    <!-- =============== MODAL INICIO =============== -->
+
+    <form class="modal fade needs-validation" novalidate id="modalAgregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="exampleModalLabel"><strong>AGREGAR PRODUCTO</strong></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label"><strong>Nombre</strong></label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Deadpool">
+                    </div>
+                    <div class="mb-3">
+                        <label for="genero" class="form-label"><strong>Genero</strong></label>
+                        <input class="form-control" list="datalistOptions" id="genero" placeholder="Acción">
+                        <datalist id="datalistOptions">
+                            <option value="Aventura">
+                            <option value="Deportes">
+                            <option value="Horror">
+                            <option value="Estrategia">
+                            <option value="FPS">
+                        </datalist>
+                    </div>
+                    <div class="mb-3">
+                        <label for="precio" class="form-label"><strong>Precio</strong></label>
+                        <input type="text" class="form-control" id="precio" placeholder="$">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label"><strong>Imagen</strong></label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CERRAR</button>
+                    <button type="submit" class="btn btn-success">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- =============== MODAL FIN =============== -->
+
+    <section class="intro">
+        <div class="bg-image h-100" style="background-color: #001F3F;">
+            <div class="mask d-flex align-items-center h-100">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true" style="position: relative; height: 700px">
+                                        <table class="table table-striped mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Codigo</th>
+                                                    <th scope="col">Nombre</th>
+                                                    <th scope="col">Genero</th>
+                                                    <th scope="col">Precio</th>
+                                                    <th scope="col">Editar</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td># 3495</td>
+                                                    <td>Hogwarts Legacy</td>
+                                                    <td>Acción</td>
+                                                    <td>$ 30 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 3451</td>
+                                                    <td>Resident Evil Village</td>
+                                                    <td>Horror</td>
+                                                    <td>$ 12 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 6894</td>
+                                                    <td>Assassin's Creed Valhalla</td>
+                                                    <td>Acción - Aventura</td>
+                                                    <td>$ 20 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 5682</td>
+                                                    <td>EA FC 24</td>
+                                                    <td>Deportes</td>
+                                                    <td>$ 28 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 6457</td>
+                                                    <td>Elden Ring</td>
+                                                    <td>Acción</td>
+                                                    <td>$ 48 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 7895</td>
+                                                    <td>Marvel’s Spider-Man</td>
+                                                    <td>Acción - Aventura</td>
+                                                    <td>$ 50 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 9468</td>
+                                                    <td>Stray</td>
+                                                    <td>Aventura</td>
+                                                    <td>$ 14 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 8734</td>
+                                                    <td>Dying Light 2</td>
+                                                    <td>Aventura</td>
+                                                    <td>$ 20 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 1856</td>
+                                                    <td>The Witcher 3: Wild Hunt</td>
+                                                    <td>Acción</td>
+                                                    <td>$ 30 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 2793</td>
+                                                    <td>Grand Theft Auto V</td>
+                                                    <td>Acción - Aventura</td>
+                                                    <td>$ 15 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 2536</td>
+                                                    <td>Red Dead Redemption 2</td>
+                                                    <td>Acción - Aventura</td>
+                                                    <td>$ 18 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 6941</td>
+                                                    <td>Cyberpunk 2077</td>
+                                                    <td>Aventura</td>
+                                                    <td>$ 45 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 8692</td>
+                                                    <td>Far Cry 6</td>
+                                                    <td>Acción - Aventura</td>
+                                                    <td>$ 48 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 4386</td>
+                                                    <td>Forza Horizon 5</td>
+                                                    <td>Deportes</td>
+                                                    <td>$ 32 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 7645</td>
+                                                    <td>Ghost Recon Wildlands</td>
+                                                    <td>Acción - Aventura</td>
+                                                    <td>$ 8 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 4375</td>
+                                                    <td>Fallout 4</td>
+                                                    <td>Acción</td>
+                                                    <td>$ 12 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td># 6781</td>
+                                                    <td>NBA 2K23</td>
+                                                    <td>Deportes</td>
+                                                    <td>$ 60 USD</td>
+                                                    <td class="iconosTabla">
+                                                        <button href=""><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#modalAgregar"></i></button>
+                                                        <button onclick="eliminarProducto()" href=""><i class="fa-solid fa-trash"></i></button>
+                                                        <button href=""><i class="fa-solid fa-star"></i></button>
+                                                    </td>
+                                                </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== MAIN FIN =============== -->
+
+    <footer class="footerCustom">
+
+        <div class="container mt-2 text-center">
+            <div class="row">
+
+                <div class="col-md-4 col-xl-3 mx-auto">
+                    <a href="/pages/index.html">
+                        <img src="/assets/images/Logo Game Zone.png" class="logoGameZoneFooter" alt="Logo Game Zone">
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-xl-3 mx-auto d-flex align-items-center justify-content-center text-start">
+                    <ul class="linksFooter" style="list-style-type: none;">
+                        <li class="mt-2">
+                            <a href="/pages/error404.html"><i class="fa-solid fa-shop"></i>Tienda</a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="/pages/error404.html"><i class="fa-solid fa-tags"></i>Ofertas</a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="/pages/contacto.html"><i class="fa-solid fa-phone"></i>Contacto</a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="/pages/error404.html"><i class="fa-solid fa-newspaper"></i>Noticias</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-xl-3 mx-auto mt-2 text-center">
+                    <h5>Seguinos en Nuestras Redes</h5>
+                    <div class="mt-3 iconosRedes">
+                        <a href="/pages/error404.html"><i class="bi bi-facebook"></i></a>
+                        <a href="/pages/error404.html"><i class="bi bi-instagram"></i></a>
+                        <a href="/pages/error404.html"><i class="bi bi-twitter"></i></a>
+                        <a href="/pages/error404.html"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center p-2 " style="background-color: rgba(0, 0, 0, 0.158); color: #001F3F;">
+            © 2024 Game Zone | Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+    <!-- =============== FOOTER FIN =============== -->
+
+    <script src="/js/admin.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

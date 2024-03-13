@@ -1,0 +1,131 @@
+#adminLink { 
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+}
+
+#adminLink:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 8px; 
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+#adminLink:hover:after,
+#adminLink:focus:after {
+    width: 100%;
+}
+
+.intro {
+    height: 100%;
+}
+
+.containerAdmin {
+    margin-top: 100px;
+}
+
+.btnAgregar {
+    background-color: #FFD700;
+    border-radius: 25px;
+    color: #001F3F;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btnAgregar:hover {
+    background-color: #ffffff;
+    color: #001F3F;
+}
+
+/* =============== MODAL INICIO =============== */
+
+.modal-dialog {
+    border-radius: 3px;
+}
+
+.modal-content {
+    background-color: #ffffe7;
+    border: 3px solid #FFD700;
+}
+
+.modal-title {
+    color: #0055b3;
+}
+
+.modal-body {
+    color: #0055b3;
+}
+
+.modal-body input {
+    color: #0055b3;
+    border-color: #FFD700;
+}
+
+/* =============== MODAL FIN =============== */
+
+/* =============== TABLA INICIO =============== */
+
+@media (max-width: 575px) {
+    .btnAgregarCustom  {
+        justify-content: start !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .btnAgregar i {
+        margin-left: 5px;
+    }
+}
+
+table td,
+table th {
+    text-overflow: ellipsis;
+    -space: nowrap;
+    overflow: hidden;
+}
+
+thead th {
+    background-color: #FFD700 !important;
+    color: #001F3F !important;
+}
+
+.card {
+    border-radius: .5rem;
+}
+
+.table-scroll {
+    border-radius: .5rem;
+}
+
+.table-scroll table thead th {
+    font-size: 1.25rem;
+}
+thead {
+    top: 0;
+    position: sticky;
+}
+
+.iconosTabla button {
+    background-color: transparent;
+    border: none;
+}
+
+.iconosTabla .fa-pen-to-square {
+    color: #23C809;
+}
+
+.iconosTabla .fa-trash {
+    color: #e00909;
+}
+
+.iconosTabla .fa-star {
+    color: #FFC300;
+}
+
+/* =============== TABLA FIN =============== */
+

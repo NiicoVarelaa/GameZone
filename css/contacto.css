@@ -1,0 +1,59 @@
+/* =============== CONTACTO INICIO =============== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.containerContacto {
+    margin-top: 95px;
+}
+
+.textoContacto {
+    color: #1565C0;
+}
+
+.inputContacto {
+    background-color: #008aff;
+}
+
+.btnContacto {
+    background-color: #008aff;
+}
+
+.btnContacto:hover {
+    background-color: #1565c0f3;
+}
+
+/* =============== CONTACTO FIN =============== */
+
+/* =============== RECUPERAR CONTRASEÑA INICIO =============== */
+
+.containerRecuperarContraseña {
+    margin-top: 120px;
+    padding: 20px;
+    border-radius: 9px;
+    border-color: #FFD700 !important;
+    margin-bottom: 30px;
+}
+
+.btnRecuperarContraseña {
+    background-color: #FFD700;
+    color: #001F3F;
+}
+
+.btnRecuperarContraseña:hover {
+    background-color: #ffffff;
+    color: #001F3F;
+}
+
+.footerRecuperarContraseña {
+    background-color: #FFD700 !important;
+}
+
+/* =============== RECUPERAR CONTRASEÑA FIN =============== */
+
+
+

@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Mouse+Memoirs&family=Poppins:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #001F3F;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =============== NAV BAR INICIO =============== */
+
+.cusmtomNavBar {
+    background-color: #FFD700;
+}
+
+.logoGameZone {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logoGameZone:hover {
+    transform: scale(1.1);
+}
+
+.navBarUser{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+@media screen and (max-width: 992px) {
+    .navBarUser {
+        justify-content: flex-start; 
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .navBarUser {
+        justify-content: center; 
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        margin-left: 50px; 
+    }
+}
+
+@media(max-width:668px) {
+    .nav-link {
+        text-align: center;
+    }
+}
+
+.nav-link {
+    color: #001F3F;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-link:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all 0.9s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    background: #fff;
+}
+
+.navbar-toggler {
+    border: 1px solid #FFD700; 
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23001F3F' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* =============== NAV BAR FIN =============== */
+
+/* =============== HEADER INICIO =============== */
+
+@media (max-width: 767px) {
+    #carouselExampleIndicators {
+        margin-top: 68px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+    .carousel-inner{
+        margin-top: 68px;
+    }
+}
+
+.tituloCarousel {
+    color: #FFD700 !important;
+}
+
+.carousel-inner .carousel-item {
+    cursor: pointer;
+}
+
+.carousel-inner .carousel-item img {
+    transition: all 500ms ease-out;
+}
+
+.carousel-inner .carousel-item .carouselText {
+    position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(36, 37, 37, 0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+}
+
+.carousel-inner .carousel-item:hover > .carouselText {
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-inner .carousel-item:hover > .carouselText h3{
+    margin-top: 200px;
+}
+
+.carousel-inner .carousel-item .carouselText h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 40px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+}
+
+.carousel-inner .carousel-item .carouselText p{
+    color: #fff;
+}
+
+@media(max-width:1200px) {
+    .carousel-inner .carousel-item:hover > .carouselText h3 {
+        margin-top: 100px;
+    }
+}
+
+.buttonCarousel {
+    background-color: #FFD700 ;
+    color: #001F3F;
+}
+
+.buttonCarousel:hover {
+    background-color: #fff;
+    color: #001F3F;
+}
+
+/* =============== HEADER FIN =============== */
+
+/* =============== MAIN INICIO =============== */
+
+.tituloMain {
+    color: #FFD700;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.cardMain {
+    border: none;
+    background-color: transparent;
+    transition: transform .5s ease, box-shadow .3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    border-color: #ffffe7 !important;
+    width: 200px;
+}
+
+.cardMain p {
+    color: #fff;
+    font-weight: 500;
+}
+
+.cardMain:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #FFD700 !important;
+}
+
+.card-body {
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.tituloCard {
+    color: #fff;
+    font-size: 18px;
+}
+
+.buttonCard {
+    background-color: #FFD700;
+    color: #001F3F;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+.buttonCard:hover {
+    background-color: #fff;
+    color: #001F3F;
+}
+
+.buttonMostrarMas {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.buttonMostrarMas:hover {
+    color: #ffffff;
+}
+
+.buttonMostrarMas:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all 0.9s;
+}
+
+.buttonMostrarMas:hover:after {
+    width: 100%;
+    background: #fff;
+}
+
+.containerBanner {
+    background-color: #001F3F;
+    border: none;
+    color: #FFD700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =============== MAIN FIN =============== */
+
+/* =============== FOOTER INICIO =============== */
+
+.footerCustom {
+    background-color: #FFD700;
+    margin-top: 30px;
+}
+
+.logoGameZoneFooter {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logoGameZoneFooter:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    .col-xl-3 .logoGameZoneFooter {
+        margin-bottom: 10px;
+    }
+}
+
+.linksFooter a {
+    color: #001F3F;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+}
+
+.linksFooter i {
+    margin-right: 10px; 
+}
+
+.linksFooter a:hover {
+    color: #fff;
+}
+
+.linksFooter a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all 0.9s;
+}
+
+.linksFooter a:hover:after {
+    width: 100%;
+    background: #fff;
+}
+
+.iconosRedes a i {
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .iconosRedes {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.bi-facebook,
+.bi-instagram,
+.bi-twitter,
+.bi-linkedin {
+    color: #001F3F;
+}
+
+.bi-facebook:hover {
+    color: #3a559f;
+}
+
+.bi-instagram:hover {
+    color: #ff3b00;
+}
+
+.bi-twitter:hover {
+    color: #03a9f4;
+}
+
+.bi-linkedin:hover {
+    color: #0a66c2;
+}
+
+/* =============== FOOTER FIN =============== */

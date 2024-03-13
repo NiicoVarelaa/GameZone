@@ -1,0 +1,218 @@
+/* =============== SECCIÓN HISTORIA INICIO =============== */
+
+.containerHistoria {
+    margin-top: 105px;
+}
+
+.tituloNosotros {
+    color: #FFD700;
+}
+
+.cardHistoria {
+    background-color: #ffffe7;
+    border-width: 3px;
+    border-radius: 9px;
+    border-color: #ffe60d;
+}
+
+.cardHistoria h2 {
+    color: #0055b3;
+}
+
+.cardHistoria p {
+    color: #37517e;
+}
+
+.imgCardHistoria {
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* =============== SECCIÓN HISTORIA FIN =============== */
+
+/* =============== SECCIÓN NUESTRA MISIÓN INICIO =============== */
+
+.misión .icon-box {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    background: #ffffe7;
+    border-radius: 5px;
+}
+
+.misión p {
+    color: #37517e;
+}
+
+.misión .icon-box .icon {
+    margin-bottom: 10px;
+}
+
+.misión .icon-box .icon i {
+    color: #0055b3;
+    font-size: 36px;
+    transition: 0.3s;
+}
+
+.misión .icon-box h4 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.misión .icon-box h4 a {
+    color: #0055b3;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+}
+
+.misión .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.misión .icon-box:hover {
+    transform: translateY(-10px);
+}
+
+/* =============== SECCIÓN NUESTRA MISIÓN FIN =============== */
+
+/* =============== SECCIÓN NUESTRO EQUIPO INICIO =============== */
+
+.equipo .member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    background: #ffffe7;
+    transition: 0.5s;
+    height: 100%;
+}
+
+.equipo .member .pic {
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.equipo .member .pic img {
+    transition: ease-in-out 0.3s;
+}
+
+.equipo .member:hover {
+    transform: translateY(-10px);
+}
+
+.equipo .member .member-info {
+    padding-left: 30px;
+}
+
+.equipo .member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #0055b3;
+}
+
+.equipo .member span {
+    color: #0055b3;
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.equipo .member span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #a7efff;
+    bottom: 0;
+    left: 0;
+}
+
+.equipo .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.equipo .member .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.equipo .member .social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #a7efff;
+    text-decoration: none;
+}
+
+.equipo .member .social a i {
+    color: #0055b3;
+    font-size: 16px;
+    margin: 0 2px;
+}
+
+.equipo .member .social a:hover {
+    background: #0055b3;
+}
+
+.equipo .member .social a:hover i {
+    color: #fffcfc; 
+}
+
+.equipo .member .social a+a {
+    margin-left: 8px;
+}
+
+/* =============== SECCIÓN NUESTRO EQUIPO FIN =============== */
+
+/* =============== SECCIÓN COMENTARIOS INICIO =============== */
+
+@media (max-width: 991px) {
+    .cardComentarios {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .cardComentarios {
+        height: 557px;
+    }
+}
+
+.cardComentarios {
+    background-color: #ffffe7;
+}
+
+.cardComentarios figure img {
+    border-color: #0054b3bd !important;
+}
+
+.cardComentarios h4 {
+    color: #0055b3;
+}
+
+.cardComentarios blockquote {
+    color: #37517e;
+}
+
+.starComentario {
+    color: #FFD700;
+}
+
+
+/* =============== SECCIÓN COMENTARIOS FIN =============== */
