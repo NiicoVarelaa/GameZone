@@ -40,6 +40,8 @@ body {
 .container404 .contenido404 h4 {
     position: relative;
     font-size: 1.5em;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 20px;
     color: #001F3F;
     background: #fff;
@@ -48,6 +50,8 @@ body {
     padding: 10px 20px;
     display: inline-block;
 }
+
+
 
 .container404 .contenido404 p {
     font-size: 1.2em;

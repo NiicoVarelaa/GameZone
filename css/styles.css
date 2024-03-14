@@ -192,15 +192,15 @@ body {
     width: 200px;
 }
 
-.cardMain p {
-    color: #fff;
-    font-weight: 500;
-}
-
 .cardMain:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 3px solid #FFD700 !important;
+}
+
+.cardMain p {
+    color: #fff;
+    font-weight: 500;
 }
 
 .card-body {
